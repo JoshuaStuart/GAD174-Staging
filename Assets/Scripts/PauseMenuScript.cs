@@ -7,20 +7,25 @@ public class PauseMenuScript : MonoBehaviour
 {
     private void Start()
     {
-        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Camera.main.GetComponent<MouseLook>().enabled = false;
     }
     public void Return()
     {
-        Time.timeScale = 1;
+        Cursor.visible = false;
+        Camera.main.GetComponent<MouseLook>().enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
         gameObject.SetActive(false);
+
     }
     public void Menu()
     {
-        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
     public void close()
     {
         Application.Quit();
+        print("Quitting game..");
     }
 }
