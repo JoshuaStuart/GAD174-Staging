@@ -8292,7 +8292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIText: {fileID: 165637734}
-  fadeSpeed: 0
+  fadeSpeed: 50
   count: 1
 --- !u!1001 &563488029
 PrefabInstance:
@@ -10477,7 +10477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIText: {fileID: 1285679736}
-  fadeSpeed: 0
+  fadeSpeed: 50
   count: 1
 --- !u!4 &743778634 stripped
 Transform:
@@ -16961,7 +16961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIText: {fileID: 1924768045}
-  fadeSpeed: 0
+  fadeSpeed: 50
   count: 1
 --- !u!1001 &1222556220
 PrefabInstance:
@@ -21662,13 +21662,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564130287}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UIText: {fileID: 1151957770}
-  fadeSpeed: 0
+  fadeSpeed: 50
   count: 1
 --- !u!1001 &1564834422
 PrefabInstance:
@@ -26728,7 +26728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIText: {fileID: 1992164404}
-  fadeSpeed: 0
+  fadeSpeed: 50
   count: 1
 --- !u!4 &1898855147 stripped
 Transform:
@@ -30414,13 +30414,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140056117}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UIText: {fileID: 190304661}
-  fadeSpeed: 0
+  fadeSpeed: 50
   count: 1
 --- !u!4 &2140394285 stripped
 Transform:
