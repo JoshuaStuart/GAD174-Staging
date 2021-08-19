@@ -27,7 +27,7 @@ public class FadeIn : MonoBehaviour
         {
             panel.SetActive(false);
             text.SetActive(false);
-            Player.GetComponent<PlayerMovement>().enabled = true;
+            Player.GetComponent<PlayerMovement>().AllowMovement();
         }
     }
 }
