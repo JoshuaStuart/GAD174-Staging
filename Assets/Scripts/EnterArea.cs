@@ -53,7 +53,7 @@ public class EnterArea : MonoBehaviour
             if(playerMovement.GetCanMoveStatus())
             {
                 ShowUI();
-                Invoke("StartFadingUI", 1f);
+                Invoke("StartFadingUI", 3f);
             }
         }
     }

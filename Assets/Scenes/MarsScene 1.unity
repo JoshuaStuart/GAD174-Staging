@@ -7672,6 +7672,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d36433666abb061429a21e13855ca3f5, type: 3}
   m_PrefabInstance: {fileID: 381162094}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &544464531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544464532}
+  - component: {fileID: 544464534}
+  - component: {fileID: 544464533}
+  m_Layer: 5
+  m_Name: Accommodation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &544464532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544464531}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1135626435}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 270}
+  m_SizeDelta: {x: 450, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &544464533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544464531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 4641345041474242323, guid: 244dec075b0237a458157ac9c6c2a941, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &544464534
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544464531}
+  m_CullTransparentMesh: 1
 --- !u!4 &546485011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e831d41a952931448ac0a42c4ba09d5f, type: 3}
@@ -7940,6 +8015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 559907207}
   - component: {fileID: 559907208}
+  - component: {fileID: 559907209}
   m_Layer: 0
   m_Name: CafeteriaCollider
   m_TagString: Untagged
@@ -7959,7 +8035,7 @@ Transform:
   m_LocalScale: {x: 38.351177, y: 38.351177, z: 38.351177}
   m_Children: []
   m_Father: {fileID: 726649326}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &559907208
 SphereCollider:
@@ -7974,6 +8050,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &559907209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559907206}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIText: {fileID: 0}
+  fadeSpeed: 0
+  count: 1
 --- !u!1001 &563488029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10022,10 +10113,10 @@ Transform:
   m_LocalPosition: {x: 1238.3774, y: 0.07999992, z: 1062.1052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 821625173}
   - {fileID: 559907207}
   - {fileID: 1564130288}
   - {fileID: 2140056118}
-  - {fileID: 821625173}
   - {fileID: 1218913506}
   - {fileID: 738706557}
   - {fileID: 1896513189}
@@ -10109,6 +10200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738706557}
   - component: {fileID: 738706558}
+  - component: {fileID: 738706559}
   m_Layer: 0
   m_Name: LaunchPadCollider
   m_TagString: Untagged
@@ -10143,6 +10235,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &738706559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738706556}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIText: {fileID: 0}
+  fadeSpeed: 0
+  count: 1
 --- !u!4 &743778634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d36433666abb061429a21e13855ca3f5, type: 3}
@@ -10892,6 +10999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 821625173}
   - component: {fileID: 821625174}
+  - component: {fileID: 821625175}
   m_Layer: 0
   m_Name: AccommodationCollider
   m_TagString: Untagged
@@ -10911,7 +11019,7 @@ Transform:
   m_LocalScale: {x: 38.351177, y: 38.351177, z: 38.351177}
   m_Children: []
   m_Father: {fileID: 726649326}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &821625174
 SphereCollider:
@@ -10926,6 +11034,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &821625175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821625172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIText: {fileID: 544464531}
+  fadeSpeed: 50
+  count: 1
 --- !u!1001 &822812891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13394,6 +13517,7 @@ Transform:
   - {fileID: 1060394038}
   - {fileID: 149102513}
   - {fileID: 638803781}
+  - {fileID: 1354702841}
   - {fileID: 1904516901}
   - {fileID: 1702280337}
   - {fileID: 677829739}
@@ -13490,7 +13614,6 @@ Transform:
   - {fileID: 2117291542}
   - {fileID: 1216654416}
   - {fileID: 353947837}
-  - {fileID: 1354702841}
   - {fileID: 638695026}
   - {fileID: 2057576519}
   - {fileID: 1919702184}
@@ -13601,6 +13724,7 @@ Transform:
   - {fileID: 393948773}
   - {fileID: 1234498280}
   - {fileID: 1554022062}
+  - {fileID: 1475229997}
   - {fileID: 2015782463}
   - {fileID: 1306537040}
   - {fileID: 57364419}
@@ -13682,7 +13806,6 @@ Transform:
   - {fileID: 142250025}
   - {fileID: 2124427436}
   - {fileID: 1861643637}
-  - {fileID: 1475229997}
   - {fileID: 1313614911}
   - {fileID: 914706419}
   - {fileID: 1522117691}
@@ -15234,7 +15357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1135626432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15307,6 +15430,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 544464532}
   - {fileID: 1273357134}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -16398,6 +16522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1218913506}
   - component: {fileID: 1218913507}
+  - component: {fileID: 1218913508}
   m_Layer: 0
   m_Name: SolarFarmCollider
   m_TagString: Untagged
@@ -16433,6 +16558,21 @@ CapsuleCollider:
   m_Height: 26.992928
   m_Direction: 1
   m_Center: {x: 0.28342536, y: -0.8845891, z: 0}
+--- !u!114 &1218913508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218913505}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIText: {fileID: 0}
+  fadeSpeed: 0
+  count: 1
 --- !u!1001 &1222556220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16880,7 +17020,7 @@ RectTransform:
   m_Children:
   - {fileID: 520922746}
   m_Father: {fileID: 1135626435}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18042,7 +18182,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1017111878}
-  m_RootOrder: 120
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1354982119
 PrefabInstance:
@@ -20014,7 +20154,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1017111878}
-  m_RootOrder: 312
+  m_RootOrder: 231
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1475229998
 AudioSource:
@@ -20971,6 +21111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1564130288}
   - component: {fileID: 1564130289}
+  - component: {fileID: 1564130290}
   m_Layer: 0
   m_Name: MainHubCollider
   m_TagString: Untagged
@@ -20990,7 +21131,7 @@ Transform:
   m_LocalScale: {x: 38.351177, y: 38.351177, z: 38.351177}
   m_Children: []
   m_Father: {fileID: 726649326}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1564130289
 SphereCollider:
@@ -21005,6 +21146,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1564130290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564130287}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIText: {fileID: 0}
+  fadeSpeed: 0
+  count: 1
 --- !u!1001 &1564834422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21534,6 +21690,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3758828209482814928, guid: 6c71f29f3f14cf149a678ce1e0eaa4fd, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758828209482814928, guid: 6c71f29f3f14cf149a678ce1e0eaa4fd, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3758828209482814929, guid: 6c71f29f3f14cf149a678ce1e0eaa4fd, type: 3}
@@ -25658,6 +25818,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896513189}
   - component: {fileID: 1896513190}
+  - component: {fileID: 1896513191}
   m_Layer: 0
   m_Name: SolarFarmCollider
   m_TagString: Untagged
@@ -25693,6 +25854,21 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: -0.22525363, y: 0, z: 0}
+--- !u!114 &1896513191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896513188}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIText: {fileID: 0}
+  fadeSpeed: 0
+  count: 1
 --- !u!4 &1898855147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e831d41a952931448ac0a42c4ba09d5f, type: 3}
@@ -28956,6 +29132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2140056118}
   - component: {fileID: 2140056119}
+  - component: {fileID: 2140056120}
   m_Layer: 0
   m_Name: GreenhouseCollider
   m_TagString: Untagged
@@ -28975,7 +29152,7 @@ Transform:
   m_LocalScale: {x: 38.351177, y: 38.351177, z: 38.351177}
   m_Children: []
   m_Father: {fileID: 726649326}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2140056119
 SphereCollider:
@@ -28990,6 +29167,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2140056120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140056117}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac4c66037c1f5a145930985eeb6e23a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIText: {fileID: 0}
+  fadeSpeed: 0
+  count: 1
 --- !u!4 &2140394285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e5e38e0643f1dd048ac2323b777bcf09, type: 3}
