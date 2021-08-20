@@ -9,11 +9,11 @@ public class Turbine : MonoBehaviour
 
     private void Start()
     {
-        speed = Random.Range(1, 10);
+        speed = Random.Range(10, 60);
     }
 
     private void Update()
     {
-        transform.Rotate(new Vector3(speed, 0));
+        transform.Rotate(new Vector3(speed * Time.deltaTime, 0));
     }
 }
