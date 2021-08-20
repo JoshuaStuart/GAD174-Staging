@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5853978160978364119}
+  - component: {fileID: 4465905906882367757}
   m_Layer: 0
   m_Name: WindTurbine
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4465905906882367757
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8227037902071194698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.388672, y: 99.99493, z: 6.213135}
+  m_Center: {x: 3.194336, y: -49.497463, z: 0.64733887}
 --- !u!1001 &1354215362023092391
 PrefabInstance:
   m_ObjectHideFlags: 0

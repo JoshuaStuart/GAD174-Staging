@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7342818030151285824}
+  - component: {fileID: 1336811418761922325}
   m_Layer: 0
   m_Name: SatelliteDish
   m_TagString: Untagged
@@ -24,13 +25,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6452518931673399458}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1209.6273, y: 14.9, z: 974.15137}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.2722, y: 2.2722, z: 2.2722}
   m_Children:
   - {fileID: 1001709085473364851}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1336811418761922325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452518931673399458}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.4610815, y: 6.8800254, z: 4.8931785}
+  m_Center: {x: -0.42349985, y: -2.9400136, z: -0.2776319}
 --- !u!1001 &751098822886079640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,11 +70,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99569532f3389e5418711ba411696368, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.97
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99569532f3389e5418711ba411696368, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.26
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99569532f3389e5418711ba411696368, type: 3}
       propertyPath: m_LocalPosition.z

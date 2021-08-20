@@ -24882,6 +24882,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: 34992171a1a759447bb2933bc3879feb, type: 3}
   objectName: Rover
+  interactionEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1833125348
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25487,6 +25490,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e831d41a952931448ac0a42c4ba09d5f, type: 3}
   m_PrefabInstance: {fileID: 1109655770}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1858891008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6452518931673399458, guid: 677a99b1e5c66404e85d4c38733af3cd, type: 3}
+  m_PrefabInstance: {fileID: 3762501172933316288}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1858891009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858891008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d97dcdde7b08dd45908a07b7a31dfd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 1aa95b2dd6d9d5f4baebf353bdfa289a, type: 3}
+  objectName: Satellite Dish
+  interactionEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1859291153
 PrefabInstance:
   m_ObjectHideFlags: 0
