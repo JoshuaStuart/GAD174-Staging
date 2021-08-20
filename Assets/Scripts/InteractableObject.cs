@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
     public AudioClip sound;
     public string objectName;
 
+    public UnityEvent interactionEvent;
 
     private void Start()
     {
@@ -23,6 +25,8 @@ public class InteractableObject : MonoBehaviour
             GameManager.instance.toolTip.GetComponent<Text>().text = objectName;
 
             GetComponent<AudioSource>().Play();
+
+            interactionEvent?.Invoke();
         }
     }
     private void OnMouseExit()
