@@ -83,6 +83,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5583e8d978e12654e811c25622d40dae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 99fa7525046c8a545a43622c333dea2c, type: 2}
     - target: {fileID: 919132149155446097, guid: 5583e8d978e12654e811c25622d40dae, type: 3}
       propertyPath: m_Name
       value: WindTurbineBlades
@@ -145,6 +149,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 91127cf8fe1a2494daf75f32430c9ca8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 99fa7525046c8a545a43622c333dea2c, type: 2}
     - target: {fileID: 919132149155446097, guid: 91127cf8fe1a2494daf75f32430c9ca8, type: 3}
       propertyPath: m_Name
       value: WindTurbineBase
