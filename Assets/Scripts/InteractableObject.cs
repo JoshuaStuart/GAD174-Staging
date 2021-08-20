@@ -2,11 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
     public AudioClip sound;
     public string objectName;
+
+    public UnityEvent interactionEvent;
+
+    private void Start()
+    {
+        gameObject.AddComponent<AudioSource>();
+        GetComponent<AudioSource>().clip = sound;
+    }
 
     private void OnMouseOver()
     {
@@ -14,10 +23,10 @@ public class InteractableObject : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GameManager.instance.toolTip.GetComponent<Text>().text = objectName;
-            gameObject.AddComponent<AudioSource>();
-            GetComponent<AudioSource>().clip = sound;
 
             GetComponent<AudioSource>().Play();
+
+            interactionEvent?.Invoke();
         }
     }
     private void OnMouseExit()
